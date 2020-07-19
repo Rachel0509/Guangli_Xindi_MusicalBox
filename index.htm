@@ -9,16 +9,39 @@
 	</head>
 	<body>
 		<header>
-			<div class="container">
-				<div class="header">
+			<div>
+				<div class="header container">
 					<h1>Forest Party</h1>
 				</div>
+				<nav>
+					<div class="nav container">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Blog</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Sign in</a></li>
+						</ul>
+					</div>
+				</nav>
 			</div>
 		</header>
 
 		<main>
-			<div class="container content">
-
+			<div class="content" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<div style="position: absolute;top:160px;"><img src="images/tree.png"></div>
+				<div style="position: absolute;top:160px; left: 210px;"><img src="images/tree.png"></div>
+				<div style="position: absolute;top:160px; left: 360px;"><img src="images/tree.png"></div>
+				<div style="position: absolute;top:160px; left: 510px;"><img src="images/tree.png"></div>
+				<div style="position: absolute;top:160px; left: 660px;"><img src="images/tree.png"></div>
+				<div style="position: absolute;top:160px; left: 810px;"><img src="images/tree.png"></div>
+				<div style="position: absolute;top:160px; left: 960px;"><img src="images/tree.png"></div>
+				<div style="position: absolute;top:160px; left: 1110px;"><img src="images/tree.png"></div>
+				<div style="position: absolute;top:160px; left: 1260px;"><img src="images/tree.png"></div>
+				<div style="position: absolute;top:160px; left: 1410px;"><img src="images/tree.png"></div>
+				<div style="position: absolute;top:160px; left: 1560px;"><img src="images/tree.png"></div>
+				<div style="position: absolute;top:160px; left: 1710px;"><img src="images/tree.png"></div>
 			</div>
 		</main>
 
@@ -26,41 +49,41 @@
 			<div class="container ">
 				<div class="row row-center">
 					<div class="animal">
-						<img src="images/mouse.svg" alt="mouse"/>
+						<img src="images/mouse.svg" alt="mouse" id="drag1" draggable="true" ondragstart="drag(event)"/>
 					</div>
 					<div class="animal">
-						<img src="images/cow.svg" alt="cow"/>
+						<img src="images/cow.svg" alt="cow" id="drag2" draggable="true" ondragstart="drag(event)"/>
 					</div>
 					<div class="animal">
-						<img src="images/tiger.svg" alt="tiger"/>
+						<img src="images/tiger.svg" alt="tiger" id="drag3" draggable="true" ondragstart="drag(event)"/>
 					</div>
 					<div class="animal gray">
-						<img src="images/rabbit.svg" alt="rabbit"/>
+						<img src="images/rabbit.svg" alt="rabbit" id="drag4" draggable="true" ondragstart="drag(event)"/>
 					</div>
 					<div class="animal gray">
-						<img src="images/dragon.svg" alt="dragon"/>
+						<img src="images/dragon.svg" alt="dragon" id="drag5" draggable="true" ondragstart="drag(event)"/>
 					</div>
 					<div class="animal gray">
-						<img src="images/snake.svg" alt="snake"/>
+						<img src="images/snake.svg" alt="snake" id="drag6" draggable="true" ondragstart="drag(event)"/>
 					</div>
 					<div class="animal pink">
-						<img src="images/hourse.svg" alt="hourse"/>
+						<img src="images/hourse.svg" alt="hourse" id="drag7" draggable="true" ondragstart="drag(event)"/>
 					</div>
 
 					<div class="animal pink">
-						<img src="images/sheep.svg" alt="sheep"/>
+						<img src="images/sheep.svg" alt="sheep" id="drag8" draggable="true" ondragstart="drag(event)"/>
 					</div>
 					<div class="animal pink">
-						<img src="images/monkey.svg" alt="tiger"/>
+						<img src="images/monkey.svg" alt="monkey" id="drag9" draggable="true" ondragstart="drag(event)"/>
 					</div>
 					<div class="animal yellow">
-						<img src="images/chicken.svg" alt="rabbit"/>
+						<img src="images/chicken.svg" alt="chicken" id="drag10" draggable="true" ondragstart="drag(event)"/>
 					</div>
 					<div class="animal yellow">
-						<img src="images/dog.svg" alt="dragon"/>
+						<img src="images/dog.svg" alt="dog" id="drag11" draggable="true" ondragstart="drag(event)"/>
 					</div>
 					<div class="animal yellow">
-						<img src="images/pig.svg" alt="snake"/>
+						<img src="images/pig.svg" alt="pig" id="drag12" draggable="true" ondragstart="drag(event)"/>
 					</div>
 				</div>
 				<div class="row row-center">
@@ -72,3 +95,4 @@
 		<script src="js/main.js"></script>
 	</body>
 </html>
+
