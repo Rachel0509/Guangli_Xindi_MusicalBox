@@ -74,8 +74,8 @@ header .nav ul a{
     /*position: relative;*/
     /*display: flex;*/
 }
-.content::-webkit-scrollbar {/*滚动条整体样式*/
-    width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+.content::-webkit-scrollbar {
+    width: 10px;     
     height: 1px;
 }
 #wrap{
@@ -144,7 +144,6 @@ header .nav ul a{
 
 
 
-/* 动画 */
 .down{
     width: 45px;
     height: 80px;
