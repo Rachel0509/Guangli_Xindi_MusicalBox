@@ -1,12 +1,12 @@
-#Guangli_Xindi_MusicalBox
+# Guangli_Xindi_MusicalBox
 
-##Description
+## Description
 1055-01-20s Music Mixer Our team of the music mixer homework is animal forest Party. Go to the webpage and you can drag those animals you like to make them sing for you. You can choose the animals you like and place them on any stage. It can also be put back in the box. This work uses most of the JS function for drag and drop, put in and out, and music loop.
 
-##Installation
+## Installation
 There is no installation process for this repo.Simply pulldown and start working!
 
-##MIT License
+## MIT License
 MIT License
 
 Copyright (c) [2020] [Guangli Li, Xindi Lu]
