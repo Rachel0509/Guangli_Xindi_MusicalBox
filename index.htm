@@ -13,7 +13,10 @@
 				<div class="header container">
 					<h1>Forest Party</h1>
 				</div>
-				<nav>
+				<div class="header container" style="max-width: 815px;font-size: 20px;">
+					<h6 style="color:#fff;">Welcome to the Animal Forest Party！You can drag any animals you like to make them sing for you, choose the animals you like and place<br/> them on any stage, and they will start singing！</h6>
+				</div>
+				<!-- <nav>
 					<div class="nav container">
 						<ul>
 							<li><a href="#">Home</a></li>
@@ -24,24 +27,56 @@
 							<li><a href="#">Sign in</a></li>
 						</ul>
 					</div>
-				</nav>
+				</nav> -->
 			</div>
 		</header>
 
 		<main>
-			<div class="content" ondrop="drop(event)" ondragover="allowDrop(event)">
-				<div style="position: absolute;top:160px;"><img src="images/tree.png"></div>
-				<div style="position: absolute;top:160px; left: 210px;"><img src="images/tree.png"></div>
-				<div style="position: absolute;top:160px; left: 360px;"><img src="images/tree.png"></div>
-				<div style="position: absolute;top:160px; left: 510px;"><img src="images/tree.png"></div>
-				<div style="position: absolute;top:160px; left: 660px;"><img src="images/tree.png"></div>
-				<div style="position: absolute;top:160px; left: 810px;"><img src="images/tree.png"></div>
-				<div style="position: absolute;top:160px; left: 960px;"><img src="images/tree.png"></div>
-				<div style="position: absolute;top:160px; left: 1110px;"><img src="images/tree.png"></div>
-				<div style="position: absolute;top:160px; left: 1260px;"><img src="images/tree.png"></div>
-				<div style="position: absolute;top:160px; left: 1410px;"><img src="images/tree.png"></div>
-				<div style="position: absolute;top:160px; left: 1560px;"><img src="images/tree.png"></div>
-				<div style="position: absolute;top:160px; left: 1710px;"><img src="images/tree.png"></div>
+			<!-- ondrop="drop(event)"-->
+
+			<div class="content" id="all" >
+				<div id="wrap">
+					<div  style="white-space: nowrap; position: relative; width: 150px;height: 205px;" >
+						<img style="margin-top: 110%;" src="images/tree.png">
+						<div class="down"></div>
+						<!-- <img class="down" style="width:100px;height:100px;" src="images/down.png"> -->
+					</div>
+					<div style="white-space: nowrap;position: relative; width: 150px;height:205px;" >
+						<img style="margin-top: 110%;"  src="images/tree.png">
+					</div>
+					<div style="white-space: nowrap;position: relative;  width: 150px;height: 205px;" >
+						<img style="margin-top: 110%;"  src="images/tree.png">
+					</div>
+					<div style="white-space: nowrap;position: relative;  width: 150px;height: 205px;" >
+						<img style="margin-top: 110%;"  src="images/tree.png">
+					</div>
+					<div style="white-space: nowrap;position: relative;  width: 150px;height: 205px;" >
+						<img style="margin-top: 110%;"  src="images/tree.png">
+					</div>
+					<div style="white-space: nowrap;position: relative;  width: 150px;height: 205px;" >
+						<img style="margin-top: 110%;"  src="images/tree.png">
+					</div>
+					<div style="white-space: nowrap;position: relative;  width: 150px;height: 205px;" >
+						<img style="margin-top: 145%;"  src="images/tree.png">
+						<div class="down"></div>
+					</div>
+					<div style="white-space: nowrap;position: relative;  width: 150px;height: 205px;" >
+						<img style="margin-top: 145%;"  src="images/tree.png">
+					</div>
+					<div style="white-space: nowrap;position: relative;  width: 150px;height: 205px;" >
+						<img style="margin-top: 145%;"  src="images/tree.png">
+					</div>
+					<div style="white-space: nowrap;position: relative;  width: 150px;height: 205px;" >
+						<img style="margin-top: 145%;"  src="images/tree.png">
+					</div>
+					<div style="white-space: nowrap;position: relative;  width: 150px;height: 205px;" >
+						<img style="margin-top: 145%;"  src="images/tree.png">
+					</div>
+					<div style="white-space: nowrap; position: relative;width: 150px;height: 205px;" >
+						<img style="margin-top:  145%;"  src="images/tree.png">
+					</div>
+				</div>
+
 			</div>
 		</main>
 
@@ -49,41 +84,42 @@
 			<div class="container ">
 				<div class="row row-center">
 					<div class="animal">
-						<img src="images/mouse.svg" alt="mouse" id="drag1" draggable="true" ondragstart="drag(event)"/>
+					<div class="animal_dynamic" style="background:url('images/mouse.png') center center / cover transparent;"  id="drag1" draggable="true"></div>
+
 					</div>
 					<div class="animal">
-						<img src="images/cow.svg" alt="cow" id="drag2" draggable="true" ondragstart="drag(event)"/>
+						<div class="animal_dynamic" style="background:url('images/cow.png') center center / cover transparent;"  id="drag2" draggable="true"></div>
 					</div>
 					<div class="animal">
-						<img src="images/tiger.svg" alt="tiger" id="drag3" draggable="true" ondragstart="drag(event)"/>
+						<div class="animal_dynamic" style="background:url('images/tiger.png') center center / cover transparent;"  id="drag3" draggable="true"></div>
 					</div>
 					<div class="animal gray">
-						<img src="images/rabbit.svg" alt="rabbit" id="drag4" draggable="true" ondragstart="drag(event)"/>
+						<div class="animal_dynamic" style="background:url('images/rabbit.png') center center / cover transparent;"  id="drag4" draggable="true"></div>
 					</div>
 					<div class="animal gray">
-						<img src="images/dragon.svg" alt="dragon" id="drag5" draggable="true" ondragstart="drag(event)"/>
+						<div class="animal_dynamic" style="background:url('images/drogan.png') center center / cover transparent;"  id="drag5" draggable="true"></div>
 					</div>
 					<div class="animal gray">
-						<img src="images/snake.svg" alt="snake" id="drag6" draggable="true" ondragstart="drag(event)"/>
+						<div class="animal_dynamic" style="background:url('images/snake.png') center center / cover transparent;"  id="drag6" draggable="true"></div>
 					</div>
 					<div class="animal pink">
-						<img src="images/hourse.svg" alt="hourse" id="drag7" draggable="true" ondragstart="drag(event)"/>
+						<div class="animal_dynamic" style="background:url('images/hourse.png') center center / cover transparent;"  id="drag7" draggable="true"></div>
 					</div>
 
 					<div class="animal pink">
-						<img src="images/sheep.svg" alt="sheep" id="drag8" draggable="true" ondragstart="drag(event)"/>
+						<div class="animal_dynamic" style="background:url('images/sheep.png') center center / cover transparent;"  id="drag8" draggable="true"></div>
 					</div>
 					<div class="animal pink">
-						<img src="images/monkey.svg" alt="monkey" id="drag9" draggable="true" ondragstart="drag(event)"/>
+						<div class="animal_dynamic" style="background:url('images/monkey.png') center center / cover transparent;"  id="drag9" draggable="true"></div>
+					</div>
+					<div class="animal yellow " >
+						<div class="animal_dynamic" style="background:url('images/chicken.png') center center / cover transparent;"  id="drag10" draggable="true"></div>
 					</div>
 					<div class="animal yellow">
-						<img src="images/chicken.svg" alt="chicken" id="drag10" draggable="true" ondragstart="drag(event)"/>
+						<div class="animal_dynamic" style="background:url('images/dog.png') center center / cover transparent;"  id="drag11" draggable="true"></div>
 					</div>
 					<div class="animal yellow">
-						<img src="images/dog.svg" alt="dog" id="drag11" draggable="true" ondragstart="drag(event)"/>
-					</div>
-					<div class="animal yellow">
-						<img src="images/pig.svg" alt="pig" id="drag12" draggable="true" ondragstart="drag(event)"/>
+						<div class="animal_dynamic" style="background:url('images/pig.png') center center / cover transparent;"  id="drag12" draggable="true" ondragstart="drag(event)"></div>
 					</div>
 				</div>
 				<div class="row row-center">

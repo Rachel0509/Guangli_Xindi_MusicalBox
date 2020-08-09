@@ -11,22 +11,26 @@ body{
     flex-direction: row;
 }
 .row-center{
+	height: 133px;
     justify-content: center;
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
 .header{
-    margin: 0 auto; text-align: center;
+    margin: 20px auto;
+	text-align: center;
 }
 .header h1{
     color: white;
-    font-size: 36px;
+    font-size: 50px;
     font-weight: bold;
     padding: 10px;
+	font-family: 'Bangers', cursive;
+	letter-spacing: 5px;
 }
 
 header nav{
@@ -49,23 +53,48 @@ header .nav ul a{
     padding: 15px 20px;
 }
 
-main{
+/* main{
     flex-grow: 1;
-}
+} */
 
 .content{
-    height: -webkit-calc(100% - 100px); 
-    height:-moz-calc(100% - 100px); 
-    height:calc(100% - 100px); 
+    width: 1200px;
+    height: 490px;
     margin: 0 auto;
-    background-image: url(../images/background.jpg);
+    /*height: -webkit-calc(100% - 100px);*/
+    /*height:-moz-calc(100% - 100px);*/
+    /*height:calc(100% - 100px);*/
+    margin: 0 auto;
+    background-image: url(../images/background.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    overflow: auto;
+    /*overflow: auto;*/
     padding: 50px;
-    position: relative;
+    overflow: hidden;
+    /*position: relative;*/
+    /*display: flex;*/
 }
-.content img{position: relative;top:400px; width: 150px;}
+.content::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+#wrap{
+    /*height: -webkit-calc(100% - 100px);*/
+    /*height:-moz-calc(100% - 100px);*/
+    /*height:calc(100% - 100px);*/
+    display: flex;
+    /*overflow: hidden;*/
+    margin-top: 30%;
+    /*overflow-x: scroll;*/
+    flex-wrap: wrap;
+    width: 82%;
+    margin: auto;
+}
+.content img{
+    /*position: relative;*/
+    height: 180px;
+    width: 190px;
+}
 
 
 .animal{
@@ -74,7 +103,7 @@ main{
     border-radius: 5px;
     margin: 20px 10px 30px 10px;
     transition: all .5s;
-}
+  }
 .gray{
     background-color: #DFDCD4;
 }
@@ -91,4 +120,55 @@ main{
     transform: scale(1.1);
     box-shadow: 0 10px 10px red;
 }
+.animal_style{
+	width: 100%;
+	margin-left: 0;
+	height: 39px;
+	top: 21%;
+}
+.animal_dynamic{
+	background-size: cover;
+	width: 100%;
+	height: 83px;
+	animation: animal 1s steps(4) infinite;
+	animation-play-state: running;
+	padding: 0;
+	cursor: default;
+	position: relative;
+}
+@keyframes animal {
+	0%{background-position: 0 0px;}
+	100%{background-position:  0 -126%;}
 
+}
+
+
+
+/* 动画 */
+.down{
+    width: 45px;
+    height: 80px;
+    position: relative;
+    top: -295px;
+    left: 74px;
+    overflow: hidden;
+    background:url('../images/down.png') center center / cover transparent;
+    animation:myfirst 1s infinite linear; 
+    -moz-animation:myfirst 1s infinite linear; /*Firefox */
+     -webkit-animation:myfirst 1s infinite linear;  /*Safari and Chrome */
+}
+
+@keyframes myfirst
+{
+    from {top:-295px;}to {top: -315px;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+    from {top:-295px;}to {top: -315px;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+    from {top:-295px;}to {top: -315px;}
+}
